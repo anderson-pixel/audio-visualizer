@@ -26,6 +26,7 @@ var start = function() {
         var array = new Uint8Array(analyser.frequencyBinCount);
         analyser.getByteFrequencyData(array);
         var step = Math.round(array.length / meterNum); 
+       
         ctx.clearRect(0, 0, cwidth, cheight);
         for (var i = 0; i < meterNum; i++) {
             var value = array[i * step];
@@ -33,8 +34,10 @@ var start = function() {
                 capYPositionArray.push(value);
             };
             ctx.fillStyle = capStyle;
+           
+          
             ctx.fillStyle = gradient; 
-            ctx.fillRect(i * 12 , cheight - value + capHeight, meterWidth, cheight); //the meter
+            ctx.fillRect(i * 12  , cheight - value + capHeight, meterWidth, cheight); 
         }
         requestAnimationFrame(renderFrame);
     }
