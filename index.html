@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <img>
     <head>
-        <title>audio visualizer</title>
+        <title>audio visualizer with audio element</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <style type="text/css">
         body {
-            background-image: url(jpg);
+            background-image: url('./assets/audio-bg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
         }
         </style>
     </head>
     <body>
-    <h1><span class="yo">audio visualizer</span></h1>
-    <p>credits</p>
+    <h1><span class="magic">audio visualizer with controls</span></h1>
+        <canvas id='canvas'  width="800" height="350"></canvas>
+        <br>
+        <br>
+        <audio src="assets/.mp3" id="audio" controls>audio element not supported</audio>
         <script src="script.js"></script>
     </body>
 </html>
