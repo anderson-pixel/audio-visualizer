@@ -22,6 +22,7 @@ var start = function() {
     gradient.addColorStop(1, '#f983ff');
     gradient.addColorStop(0.5, '#fdbd55');
     gradient.addColorStop(0, '#f983ff');
+    // loop
     function renderFrame() {
         var array = new Uint8Array(analyser.frequencyBinCount);
         analyser.getByteFrequencyData(array);
