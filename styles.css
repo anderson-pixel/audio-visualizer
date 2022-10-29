@@ -31,8 +31,16 @@ body {
   overflow: hidden; 
 }
 
+p {
+}
+
+.a-tag {
+  cursor: pointer;
+}
+
 h1 {
   color: transparent;
+  font-size: 40px;
 }
 
 h1 > .magic {
